@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ayrton Senna - Legenda Formule 1. Interaktivní one-page prezentace o životě, kariéře a odkazu jednoho z největších závodníků historie.">
+    <meta name="keywords" content="Ayrton Senna, F1, Formule 1, Racing, Legenda, Brazílie, McLaren, Williams">
+    <meta name="author" content="Student">
+    <title>Ayrton Senna | Racing Legend</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Racing+Sans+One&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">SENNA</div>
+        <div class="nav-links">
+            <a href="#hero">Start</a>
+            <a href="#biography">Příběh</a>
+            <a href="#stats">Statistiky</a>
+            <a href="#legacy">Odkaz</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-bg">
+            <img src="assets/images/hero.jpg" alt="Ayrton Senna Pensive" class="hero-img">
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="AYRTON SENNA">AYRTON SENNA</h1>
+            <p class="subtitle">Driven by Perfection</p>
+            <a href="#biography" class="btn-scroll">Poznejte Legendu</a>
+        </div>
+    </header>
+
+    <!-- Biography Section -->
+    <section id="biography">
+        <div class="container">
+            <h2 class="section-title">Muž za hledím</h2>
+            <div class="bio-grid">
+                <div class="bio-text" data-aos="fade-right">
+                    <p><strong>Ayrton Senna da Silva</strong> (1960–1994) nebyl jen závodník. Byl to národní hrdina,
+                        mystik rychlosti a ikona odhodlání. Narodil se v São Paulu a svou cestu začal na motokárách, kde
+                        si vypěstoval svůj agresivní, ale precizní styl.</p>
+                    <p>Jeho rivalita s Alainem Prostem definovala celou éru Formule 1. Senna byl známý svou
+                        neuvěřitelnou schopností najít grip na mokru tam, kde ostatní viděli jen chaos. "Rain Master" –
+                        tak mu říkali.</p>
+                    <p>Zemřel tragicky během Velké ceny San Marina 1994, ale jeho duch žije dál. Senna Institute dodnes
+                        pomáhá milionům dětí v Brazílii.</p>
+                </div>
+                <div class="bio-highlight" data-aos="fade-left">
+                    <blockquote>
+                        "Nemám žádné idoly. Obdivuji práci, odhodlání a kompetenci."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats">
+        <h2 class="section-title">Kariéra v číslech</h2>
+        <div class="stats-container container">
+            <div class="stat-item">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">Mistr světa</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="41">0</span>
+                <span class="stat-label">Vítězství</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="65">0</span>
+                <span class="stat-label">Pole Positions</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="80">0</span>
+                <span class="stat-label">Pódií</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy/Quotes Section -->
+    <section id="legacy">
+        <div class="container">
+            <h2 class="section-title">Filosofie & Odkaz</h2>
+            <div class="quote-card">
+                <p class="quote-text">"Pokud už nejdete po mezeře, která existuje, nejste už závodní jezdec."</p>
+            </div>
+            <div class="legacy-content">
+                <p>Senna navždy změnil bezpečnost F1. Jeho smrt vedla k radikálním změnám v konstrukci vozů a okruhů,
+                    které zachránily nespočet životů. Jeho odkaz však není jen v bezpečnosti, ale v inspiraci: v hledání
+                    vlastních limitů.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+
+    <!-- Audio Elements -->
+    <audio id="bg-music" src="assets/audio/bg_music.mp3" loop></audio>
+    <audio id="click-sfx" src="assets/audio/click_sfx.mp3"></audio>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Senna Tribute Project. Vytvořeno pro školní soutěž.</p>
+            <div class="socials">
+                <a href="https://github.com/JiriFuxa14" target="_blank">GitHub: JiriFuxa14</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
